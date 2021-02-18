@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    position: relative;
+    text-decoration: none;
+    list-style-type: none;
+}
+:root{
+    --blue-background: #0B212C;
+    --color-mountain-3: #779596;
+    --color-mountain-4: linear-gradient(173.89deg, #73838D 4.83%, #617F97 96.91%);
+    --color-mountain-5:#4C6584;
+    --color-mountain-6: #2F4558;
+}
+body{
+    background: var(--blue-background);
+}
+
+/* CIRCLE */
+.circle{
+    width: 40vw;
+    height: 40vw;    
+    background: linear-gradient(167.16deg, #FF5D5D 16.88%, #FE7646 39.06%, #FCBD6B 60.05%);
+    border-radius: 50%;
+    position: absolute;
+    margin: calc((100vh - 40vw)/ 2) 30vw;
+}
+
+/* CUT */
+.circle-cut{
+    width: 40vw;
+    height: 40vw;    
+    background: transparent;
+    border-radius: 50%;
+    border: 5vw solid var(--blue-background);
+    box-sizing: revert;
+    position: absolute;
+    margin: calc((100vh - 50vw)/ 2) 25vw;
+}
